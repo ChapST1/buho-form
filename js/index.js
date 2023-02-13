@@ -17,7 +17,6 @@ function getRandomNumber() {
     inputRandomNumber.value = randomNumber;
 }
 function onlyText(input) {
-    const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
     input.addEventListener('keyup', (e) => {
         let value = e.target.value;
