@@ -18,3 +18,6 @@
 
 ## "Numero random al recargar la pagina":
 ![Primer Diseno](./screenshot/6.png)
+
+## "Alerta de Confirmación":
+![Primer Diseno](./screenshot/7.png)
