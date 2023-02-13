@@ -57,6 +57,7 @@ body {
     border-radius: var(--border-radius);
 }
 
+
 .label__input {
     border: 1px solid var(--inputBorder);
     border-radius: 3px;
@@ -91,4 +92,9 @@ body {
     .label__input {
         padding: 10px 5px;
     }
+}
+
+/* si se agrega un numero al campo de (solo Nombre) se le agrega esta clase */
+.is-invalid {
+    border: 1px solid red;
 }
