@@ -23,7 +23,7 @@ function onlyText(input) {
         //usando una expresion regular
         if (/[0-9]/.test(value)) {
             inputName.classList.add('is-invalid');
-            inputLabelName.innerHTML = ' ( solo se permiten letras no numeros )';
+            inputLabelName.innerHTML = ' ( No se permiten números )';
         } else {
             inputName.classList.remove('is-invalid');
             inputLabelName.innerHTML = 'Nombre';
