@@ -1,9 +1,20 @@
 //variables
+
+//modal
+const modal = document.getElementById('modal');
+const btnCancel = document.getElementById('btnCancel');
+const btnAccept = document.getElementById('btnAccept');
+
+//form
+const form = document.getElementById('form');
+
 //name
 const inputName = document.getElementById('inputName');
 const inputLabelName = document.getElementById('labelName')
+
 //random
 const inputRandomNumber = document.getElementById('inputRandom');
+
 //button
 const btnSubmit = document.getElementById('inputBtn')
 
@@ -13,6 +24,20 @@ window.addEventListener('load', () => {
     getRandomNumber();
     onlyText(inputName);
 })
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    modal.classList.add("modal-is-active")
+
+    btnAccept.addEventListener('click', () => {
+        event.target.submit();
+    })
+
+    btnCancel.addEventListener('click', () => {
+        modal.classList.remove("modal-is-active")
+    })
+})
+
 
 //funciones
 function getRandomNumber() {

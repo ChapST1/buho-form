@@ -12,25 +12,36 @@
 
 <body>
 
-    <form class="form" method="get">
+    <form class="form" id="form" method="get">
         <label for="inputName" class="form__label label">
             <span class="label__name" id="labelName">Nombre</span>
-            <input class="label__input" type="text" id="inputName" placeholder="Tu nombre" required>
+            <input class="label__input" type="text" id="inputName" placeholder="Tu nombre" required autocomplete="off">
         </label>
 
         <label for="email" class="form__label label">
             <span class="label__name">Correo</span>
-            <input class="label__input" type="email" id="email" placeholder="ejemplo@gmail.com" required>
+            <input class="label__input" type="email" id="email" placeholder="ejemplo@gmail.com" required
+                autocomplete="off">
         </label>
 
         <label for="inputRandom" class="form__label label">
-            <span class="label__name">Numero Random</span>
+            <span class="label__name">Numero aleatorio</span>
             <input class="label__input" type="text" id="inputRandom" value="cargando..." readonly>
         </label>
 
         <button class="form__btn" id="inputBtn">SEND FEEDBACK</button>
     </form>
 
+    <!-- Modol -->
+    <section class="modal" id="modal">
+        <div class="modal__info info">
+            <h2 class="info__title">Estas seguro de enviar el <br> formulario</h2>
+            <div class="info__buttons">
+                <button class="info__btn" id="btnAccept">Continuar</button>
+                <button class="info__btn" id="btnCancel">Cancelar</button>
+            </div>
+        </div>
+    </section>
     <script src="./js/index.js"></script>
 </body>
 

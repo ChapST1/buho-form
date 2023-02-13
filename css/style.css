@@ -72,6 +72,11 @@ body {
     border: 1px solid var(--inputBorder);
     border-radius: 3px;
     background-color: var(--inputBg);
+    transition: border .5s;
+}
+
+.label__input:focus {
+    border-bottom-color: var(--formularioBtn);
 }
 
 .label__input::placeholder {
@@ -82,6 +87,86 @@ body {
     background-color: var(--formularioBtn);
     color: #fff;
     cursor: pointer;
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.824);
+    backdrop-filter: blur(5px);
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.modal-is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info {
+    background-color: #fff;
+    width: fit-content;
+    padding: 20px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info__title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+.info__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.info__btn {
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 8px 10px;
+    flex-grow: 1;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.info__btn:nth-child(1) {
+    border: 1px solid #3f4bb8;
+}
+
+.info__btn:nth-child(2) {
+    border: 1px solid #f00;
+}
+
+.info__btn:nth-child(1):hover {
+    background-color: #3f4bb8;
+    color: #fff;
+}
+
+.info__btn:nth-child(2):hover {
+    color: #fff;
+    background-color: #f00;
+}
+
+.info__btn:hover {
+    background-color: #3f4bb8;
 }
 
 /* responsive ( mobile )*/
