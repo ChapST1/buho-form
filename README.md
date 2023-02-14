@@ -1,3 +1,4 @@
+
 # **Empresa Buho** 
 ## **Caso-1**: Formulario
 [Ver demo ->](https://chapst1.github.io/buho-form/)
@@ -7,20 +8,20 @@
 
 ## **Funciones:**
 
-## "Todos los campos deben estar llenos":
+## *"Todos los campos deben estar llenos"*:
 
 ![Primer Diseno](./screenshot/5.png)
 
 
-## "No numeros en el campo de Nombre":
+## *"No se permiten numeros en el campo de nombre"*:
 ![Primer Diseno](./screenshot/3.png)
 ![Primer Diseno](./screenshot/4.png)
 
-## "Numero random al recargar la pagina":
+## *"Numero aleatorio al recargar la pagina"*:
 ![Primer Diseno](./screenshot/6.png)
 
-## "Alerta de Confirmación":
+## *"Alerta de confirmacion"*:
 ![Primer Diseno](./screenshot/7.png)
 
-## "Dark & Light Mode":
-![Primer Diseno](./screenshot/8.png)
+## *"Dark & Light Mode"*:
+![Primer Dise o](./screenshot/8.png)
