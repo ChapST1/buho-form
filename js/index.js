@@ -45,11 +45,11 @@ form.addEventListener('submit', (event) => {
 btnDarkMode.addEventListener('click', () => {
     document.body.classList.toggle('body-dark');
     localStorage.setItem("dark-mode", "true")
-    btnDarkMode.firstElementChild.setAttribute('src', '../images/sun.png');
+    btnDarkMode.firstElementChild.setAttribute('src', './images/sun.png');
 
     if (!document.body.classList.contains('body-dark')) {
         localStorage.setItem("dark-mode", "false")
-        btnDarkMode.firstElementChild.setAttribute('src', '../images/moon.png');
+        btnDarkMode.firstElementChild.setAttribute('src', './images/moon.png');
     }
 })
 
@@ -83,9 +83,9 @@ function isActiveDarkMode() {
 
     if (value == "true") {
         document.body.classList.add('body-dark');
-        btnDarkMode.firstElementChild.setAttribute('src', '../images/sun.png');
+        btnDarkMode.firstElementChild.setAttribute('src', './images/sun.png');
     } else {
         document.body.classList.remove('body-dark');
-        btnDarkMode.firstElementChild.setAttribute('src', '../images/moon.png');
+        btnDarkMode.firstElementChild.setAttribute('src', './images/moon.png');
     }
 }
