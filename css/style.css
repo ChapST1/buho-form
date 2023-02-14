@@ -2,14 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root {
-    --bodyBg: #ffffff;
+    --bodyBg: #cc5577;
+    --bodyImg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23ce5776' x='10' width='11' height='11'/%3E%3Crect fill='%23d05a76' y='10' width='11' height='11'/%3E%3Crect fill='%23d15c75' x='20' width='11' height='11'/%3E%3Crect fill='%23d35f74' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d46174' y='20' width='11' height='11'/%3E%3Crect fill='%23d66473' x='30' width='11' height='11'/%3E%3Crect fill='%23d76673' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d96972' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23da6c72' y='30' width='11' height='11'/%3E%3Crect fill='%23db6e71' x='40' width='11' height='11'/%3E%3Crect fill='%23dc7171' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23dd7471' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23de7671' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23df7971' y='40' width='11' height='11'/%3E%3Crect fill='%23e07c71' x='50' width='11' height='11'/%3E%3Crect fill='%23e17e71' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e28171' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e38471' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e38771' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e48972' y='50' width='11' height='11'/%3E%3Crect fill='%23e58c72' x='60' width='11' height='11'/%3E%3Crect fill='%23e58f73' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e69173' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e69474' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23e79775' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23e79a75' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23e89c76' x='70' width='11' height='11'/%3E%3Crect fill='%23e89f77' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23e8a278' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23e9a47a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23e9a77b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e9aa7c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e9ac7e' x='80' width='11' height='11'/%3E%3Crect fill='%23eaaf7f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23eab281' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23eab482' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23eab784' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23eaba86' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ebbc88' x='90' width='11' height='11'/%3E%3Crect fill='%23ebbf8a' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23ebc18c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ebc48e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23ebc790' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ebc992' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ebcc94' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ebce97' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ebd199' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ecd39c' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ecd69e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23ecd8a1' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23ecdba4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ecdda6' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ece0a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ede2ac' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ede4af' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ede7b2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ede9b5' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23eeecb8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
     --formularioBg: #FEFEFF;
     --formularioBtn: #2C3DCB;
     --formularioName: #949597;
     --inputBg: #FCFCFC;
+    --inputColor: #000;
     --inputBorder: #E4E4E4;
     --placehoderColor: #E4E4E4;
     --border-radius: 3px;
+    --infoConfirm: #fff;
+    --infoBtnAccept: #ffff;
+    --infoBtnCancel: #ffff;
+    --infoTextColor: #000;
 }
 
 * {
@@ -18,15 +24,31 @@
     box-sizing: border-box;
 }
 
-body {
+.body-dark {
+    /* --bodyBg: #1E292C; */
+    --bodyBg: #2b383b;
+    --bodyImg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%231E292C' width='11' height='11'/%3E%3Crect fill='%231e292b' x='10' width='11' height='11'/%3E%3Crect fill='%231d282b' y='10' width='11' height='11'/%3E%3Crect fill='%231d282a' x='20' width='11' height='11'/%3E%3Crect fill='%231d2729' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%231c2729' y='20' width='11' height='11'/%3E%3Crect fill='%231c2628' x='30' width='11' height='11'/%3E%3Crect fill='%231c2627' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%231b2527' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%231b2526' y='30' width='11' height='11'/%3E%3Crect fill='%231b2525' x='40' width='11' height='11'/%3E%3Crect fill='%231a2425' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%231a2424' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%231a2323' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%231a2323' y='40' width='11' height='11'/%3E%3Crect fill='%23192222' x='50' width='11' height='11'/%3E%3Crect fill='%23192222' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23192121' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23192120' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23182020' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%2318201f' y='50' width='11' height='11'/%3E%3Crect fill='%2318201f' x='60' width='11' height='11'/%3E%3Crect fill='%23181f1e' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23171f1d' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23171e1d' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23171e1c' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23171d1c' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23161d1b' x='70' width='11' height='11'/%3E%3Crect fill='%23161c1b' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23161c1a' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23161b1a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23151b19' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23151b18' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23151a18' x='80' width='11' height='11'/%3E%3Crect fill='%23151a17' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23151917' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23141916' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23141816' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23141815' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23131715' x='90' width='11' height='11'/%3E%3Crect fill='%23131714' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23131614' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23121613' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23121513' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23121512' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23111412' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23111411' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23111311' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23101310' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%2310120f' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%230f120f' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%230f110e' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%230f110e' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%230e100d' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%230e0f0c' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%230d0f0c' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%230d0e0b' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%230c0d0a' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%230c0d0a' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%230B0C09' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    --formularioBg: #2d2d31;
+    --formularioName: #dddddd;
+    --inputBg: #fcfcfc00;
+    --inputBorder: #26262861;
+    --inputColor: #fff;
+    --placehoderColor: #737171;
+    --infoConfirm: #2d2d31;
+    --infoBtnAccept: #3f4bb8;
+    --infoBtnCancel: #f00;
+    --infoTextColor: #fff;
+}
+
+.body {
     height: 100vh;
-    background-color: var(--bodyBg);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s;
 
-    background-color: #cc5577;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23ce5776' x='10' width='11' height='11'/%3E%3Crect fill='%23d05a76' y='10' width='11' height='11'/%3E%3Crect fill='%23d15c75' x='20' width='11' height='11'/%3E%3Crect fill='%23d35f74' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d46174' y='20' width='11' height='11'/%3E%3Crect fill='%23d66473' x='30' width='11' height='11'/%3E%3Crect fill='%23d76673' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d96972' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23da6c72' y='30' width='11' height='11'/%3E%3Crect fill='%23db6e71' x='40' width='11' height='11'/%3E%3Crect fill='%23dc7171' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23dd7471' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23de7671' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23df7971' y='40' width='11' height='11'/%3E%3Crect fill='%23e07c71' x='50' width='11' height='11'/%3E%3Crect fill='%23e17e71' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e28171' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e38471' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e38771' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e48972' y='50' width='11' height='11'/%3E%3Crect fill='%23e58c72' x='60' width='11' height='11'/%3E%3Crect fill='%23e58f73' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e69173' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e69474' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23e79775' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23e79a75' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23e89c76' x='70' width='11' height='11'/%3E%3Crect fill='%23e89f77' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23e8a278' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23e9a47a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23e9a77b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e9aa7c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e9ac7e' x='80' width='11' height='11'/%3E%3Crect fill='%23eaaf7f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23eab281' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23eab482' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23eab784' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23eaba86' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ebbc88' x='90' width='11' height='11'/%3E%3Crect fill='%23ebbf8a' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23ebc18c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ebc48e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23ebc790' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ebc992' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ebcc94' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ebce97' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ebd199' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ecd39c' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ecd69e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23ecd8a1' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23ecdba4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ecdda6' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ece0a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ede2ac' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ede4af' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ede7b2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ede9b5' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23eeecb8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--bodyBg);
+    background-image: var(--bodyImg);
     background-attachment: fixed;
     background-size: cover;
 
@@ -65,6 +87,7 @@ body {
     border: none;
     outline: none;
     border-radius: var(--border-radius);
+    color: var(--inputColor);
 }
 
 
@@ -112,7 +135,7 @@ body {
 }
 
 .info {
-    background-color: #fff;
+    background-color: var(--infoConfirm);
     width: fit-content;
     padding: 20px 20px;
     border-radius: 5px;
@@ -127,6 +150,7 @@ body {
     text-align: center;
     font-weight: 500;
     margin: 0;
+    color: var(--infoTextColor);
 }
 
 .info__buttons {
@@ -137,7 +161,7 @@ body {
 }
 
 .info__btn {
-    color: #000;
+    color: var(--infoTextColor);
     border: none;
     outline: none;
     border-radius: 15px;
@@ -148,11 +172,13 @@ body {
 }
 
 .info__btn:nth-child(1) {
-    border: 1px solid #3f4bb8;
+    border: 1px solid var(--infoBtnAccept);
+    background-color: var(--infoBtnAccept);
 }
 
 .info__btn:nth-child(2) {
-    border: 1px solid #f00;
+    border: 1px solid var(--infoBtnCancel);
+    background-color: var(--infoBtnCancel);
 }
 
 .info__btn:nth-child(1):hover {
@@ -167,6 +193,25 @@ body {
 
 .info__btn:hover {
     background-color: #3f4bb8;
+}
+
+.dark-mode {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+.dark__icon {
+    width: 30px;
 }
 
 /* responsive ( mobile )*/

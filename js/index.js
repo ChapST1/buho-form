@@ -18,11 +18,15 @@ const inputRandomNumber = document.getElementById('inputRandom');
 //button
 const btnSubmit = document.getElementById('inputBtn')
 
+//Dark Mode
+const btnDarkMode = document.getElementById('darkMode');
+
 
 //eventos
 window.addEventListener('load', () => {
     getRandomNumber();
     onlyText(inputName);
+    isActiveDarkMode()
 })
 
 form.addEventListener('submit', (event) => {
@@ -38,6 +42,17 @@ form.addEventListener('submit', (event) => {
     })
 })
 
+btnDarkMode.addEventListener('click', () => {
+    document.body.classList.toggle('body-dark');
+    localStorage.setItem("dark-mode", "true")
+    btnDarkMode.firstElementChild.setAttribute('src', '../images/sun.png');
+
+    if (!document.body.classList.contains('body-dark')) {
+        localStorage.setItem("dark-mode", "false")
+        btnDarkMode.firstElementChild.setAttribute('src', '../images/moon.png');
+    }
+})
+
 
 //funciones
 function getRandomNumber() {
@@ -45,7 +60,6 @@ function getRandomNumber() {
     inputRandomNumber.value = randomNumber;
 }
 function onlyText(input) {
-
     input.addEventListener('keyup', (e) => {
         let value = e.target.value;
         //usando una expresion regular
@@ -63,4 +77,15 @@ function onlyText(input) {
             btnSubmit.removeAttribute('disabled')
         }
     })
+}
+function isActiveDarkMode() {
+    let value = localStorage.getItem("dark-mode");
+
+    if (value == "true") {
+        document.body.classList.add('body-dark');
+        btnDarkMode.firstElementChild.setAttribute('src', '../images/sun.png');
+    } else {
+        document.body.classList.remove('body-dark');
+        btnDarkMode.firstElementChild.setAttribute('src', '../images/moon.png');
+    }
 }

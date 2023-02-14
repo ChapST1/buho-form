@@ -21,3 +21,6 @@
 
 ## "Alerta de Confirmación":
 ![Primer Diseno](./screenshot/7.png)
+
+## "Dark & Light Mode":
+![Primer Diseno](./screenshot/8.png)
