@@ -65,7 +65,7 @@ function onlyText(input) {
         //usando una expresion regular
         if (/[0-9]/.test(value)) {
             inputName.classList.add('is-invalid');
-            inputLabelName.innerHTML = ' ( No se permiten números )';
+            inputLabelName.innerHTML = 'Nombre  ( No se permiten números )';
 
             btnSubmit.style.cursor = 'not-allowed'
             btnSubmit.setAttribute('disabled', true)
