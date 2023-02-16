@@ -33,6 +33,10 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     modal.classList.add("modal-is-active")
 
+    modal.addEventListener('click', (event) => {
+        if (event.target == modal) modal.classList.remove("modal-is-active")
+    })
+
     btnAccept.addEventListener('click', () => {
         event.target.submit();
     })
