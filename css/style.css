@@ -12,6 +12,7 @@
     --inputBorder: #E4E4E4;
     --placehoderColor: #E4E4E4;
     --border-radius: 3px;
+    --darkBtn: #fff;
     --infoConfirm: #fff;
     --infoBtnAccept: #3f4bb8;
     --infoBtnCancel: #f00;
@@ -22,6 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .body-dark {
@@ -35,6 +37,7 @@
     --inputColor: #fff;
     --placehoderColor: #737171;
     --formularioBtn: #4451c5;
+    --darkBtn: #4451c5;
     --infoConfirm: #2d2d31;
     --infoBtnAccept: #3f4bb8;
     --infoBtnCancel: #f00;
@@ -81,7 +84,7 @@ html {
 .label__name {
     display: block;
     color: var(--formularioName);
-    font-size: 17px;
+    font-size: 18px;
     margin: 10px 0;
 }
 
@@ -102,6 +105,7 @@ html {
     border-radius: 3px;
     background-color: var(--inputBg);
     transition: border .5s;
+    font-size: 17px;
 }
 
 .label__input:focus {
@@ -142,13 +146,12 @@ html {
 
 .info {
     background-color: var(--infoConfirm);
-    width: fit-content;
+    width: 350px;
     padding: 20px 20px;
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .info__title {
@@ -159,6 +162,13 @@ html {
     color: var(--infoTextColor);
 }
 
+.info__paragraph {
+    color: #a1a0a0;
+    text-align: center;
+    font-size: 17px;
+    margin: 13px 0 25px 0;
+}
+
 .info__buttons {
     display: flex;
     align-items: center;
@@ -167,7 +177,7 @@ html {
 }
 
 .info__btn {
-    color: var(--infoTextColor);
+    color: #fff;
     border: none;
     outline: none;
     border-radius: 15px;
@@ -187,19 +197,6 @@ html {
     background-color: var(--infoBtnCancel);
 }
 
-.info__btn:nth-child(1):hover {
-    background-color: #3f4bb8;
-    color: #fff;
-}
-
-.info__btn:nth-child(2):hover {
-    color: #fff;
-    background-color: #f00;
-}
-
-.info__btn:hover {
-    background-color: #3f4bb8;
-}
 
 .dark-mode {
     width: 65px;
@@ -214,14 +211,17 @@ html {
     cursor: pointer;
 }
 
-
-
 .dark__icon {
     width: 30px;
 }
 
 /* responsive ( mobile )*/
 @media (max-width: 768px) {
+
+    .body {
+        transition: none;
+    }
+
     .form {
         width: 90%;
         padding: 20px;
@@ -232,11 +232,39 @@ html {
     }
 
     .label__name {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .label__input {
         padding: 10px 5px;
+        font-size: 15px;
+    }
+
+    .form__btn {
+        padding: 13px 5px;
+    }
+
+    /* modal */
+    .info {
+        width: 300px;
+    }
+
+    .info__title {
+        font-size: 17px;
+    }
+
+    .info__paragraph {
+        font-size: 15px;
+        margin: 10px 0 15px 0;
+    }
+
+    .dark-mode {
+        width: 45px;
+        height: 45px;
+        background-color: var(--darkBtn);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .5s;
     }
 }
 
