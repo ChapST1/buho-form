@@ -21,7 +21,13 @@
 ![Primer Diseno](./screenshot/6.png)
 
 ## *"Alerta de confirmacion"*:
-![Primer Diseno](./screenshot/7.png)
+![Primer Diseno](./screenshot/11.png)
+![Primer Diseno](./screenshot/12.png)
 
 ## *"Dark & Light Mode"*:
+![Primer Diseno](./screenshot/2.png)
 ![Primer Dise o](./screenshot/8.png)
+
+## *"Diseño Adaptable a dispositivos moviles"*:
+![Primer Dise o](./screenshot/9.jpeg)
+![Primer Dise o](./screenshot/10.jpeg)
