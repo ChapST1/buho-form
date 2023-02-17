@@ -14,11 +14,11 @@
 
 
 ## *"No se permiten numeros en el campo de nombre"*:
-![Primer Diseno](./screenshot/3.png)
-![Primer Diseno](./screenshot/4.png)
+![Primer Diseno](./screenshot/14.png)
+![Primer Diseno](./screenshot/13.png)
 
 ## *"Numero aleatorio al recargar la pagina"*:
-![Primer Diseno](./screenshot/6.png)
+![Primer Diseno](./screenshot/15.png)
 
 ## *"Alerta de confirmacion"*:
 ![Primer Diseno](./screenshot/11.png)
