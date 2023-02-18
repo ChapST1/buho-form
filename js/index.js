@@ -11,7 +11,8 @@ const form = document.getElementById('form');
 //name
 const inputName = document.getElementById('inputName');
 const inputLabelName = document.getElementById('labelName')
-
+//email
+const inputEmail = document.getElementById('inputEmail');
 //random
 const inputRandomNumber = document.getElementById('inputRandom');
 
@@ -26,9 +27,9 @@ const btnDarkMode = document.getElementById('darkMode');
 window.addEventListener('load', () => {
     getRandomNumber();
     onlyText(inputName);
-    isActiveDarkMode()
+    validateEmail(inputEmail);
+    isActiveDarkMode();
 })
-
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     modal.classList.add("modal-is-active")
@@ -45,7 +46,6 @@ form.addEventListener('submit', (event) => {
         modal.classList.remove("modal-is-active")
     })
 })
-
 btnDarkMode.addEventListener('click', () => {
     document.body.classList.toggle('body-dark');
     localStorage.setItem("dark-mode", "true")
@@ -56,11 +56,10 @@ btnDarkMode.addEventListener('click', () => {
         btnDarkMode.firstElementChild.setAttribute('src', './images/moon.png');
     }
 })
-
-
 //funciones
 function getRandomNumber() {
     let randomNumber = Math.random().toString().slice(2, 8);
+    let icon = inputRandomNumber.nextElementSibling.style.color = '#8dcd8d';
     inputRandomNumber.value = randomNumber;
 }
 function onlyText(input) {
@@ -70,15 +69,41 @@ function onlyText(input) {
         if (/[0-9]/.test(value)) {
             inputName.classList.add('is-invalid');
             inputLabelName.innerHTML = 'Nombre  ( Este campo solo acepta letras )';
+            input.nextElementSibling.style.color = '#e95252'
 
             btnSubmit.style.cursor = 'not-allowed'
             btnSubmit.setAttribute('disabled', true)
-        } else {
+        } 
+        else if(value.length == 0 ){
+            input.nextElementSibling.style.color = 'transparent'
+            inputLabelName.innerHTML = 'Nombre';
+            input.classList.remove('is-invalid');
+        }
+        else {
             inputName.classList.remove('is-invalid');
             inputLabelName.innerHTML = 'Nombre';
+            input.nextElementSibling.style.color = '#8dcd8d';
 
             btnSubmit.style.cursor = 'pointer'
             btnSubmit.removeAttribute('disabled')
+        }
+    })
+}
+function validateEmail(email) {
+    email.addEventListener('keyup', () =>{
+        let value = email.value;
+        let re = /\S+@\S+\.\S+/;
+        if(re.test(value)){
+            email.classList.remove('is-invalid');
+            email.nextElementSibling.style.color = '#8dcd8d';
+        }
+        else if(value.length == 0){
+            email.nextElementSibling.style.color = 'transparent';
+            email.classList.remove('is-invalid');
+        }
+        else{
+            email.classList.add('is-invalid');
+            email.nextElementSibling.style.color = '#e95252';
         }
     })
 }

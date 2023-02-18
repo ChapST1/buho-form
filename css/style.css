@@ -88,6 +88,10 @@ html {
     margin: 10px 0;
 }
 
+.label__content {
+    position: relative;
+}
+
 .label__input,
 .form__btn {
     display: block;
@@ -99,6 +103,14 @@ html {
     color: var(--inputColor);
 }
 
+.fa-circle-check {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
+    font-size: 15px;
+}
 
 .label__input {
     border: 1px solid var(--inputBorder);

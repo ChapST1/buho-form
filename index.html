@@ -12,22 +12,31 @@
 </head>
 
 <body class="body">
-
     <form class="form" id="form" method="get">
         <label for="inputName" class="form__label label">
             <span class="label__name" id="labelName">Nombre</span>
-            <input class="label__input" type="text" id="inputName" placeholder="Tu nombre" required autocomplete="off">
+            <div class="label__content input">
+                <input class="label__input input__name" type="text" id="inputName" placeholder="Tu nombre" required
+                    autocomplete="off">
+                <i class="fa-regular fa-circle-check"></i>
+            </div>
         </label>
 
-        <label for="email" class="form__label label">
+        <label for="inputEmail" class="form__label label">
             <span class="label__name">Correo</span>
-            <input class="label__input" type="email" id="email" placeholder="ejemplo@gmail.com" required
-                autocomplete="off">
+            <div class="label__content input">
+                <input class="label__input" type="email" id="inputEmail" placeholder="ejemplo@gmail.com" required
+                    autocomplete="off">
+                <i class="fa-regular fa-circle-check"></i>
+            </div>
         </label>
 
         <label for="inputRandom" class="form__label label">
             <span class="label__name">Numero aleatorio</span>
-            <input class="label__input" type="text" id="inputRandom" value="cargando..." readonly>
+            <div class="label__content input">
+                <input class="label__input" type="text" id="inputRandom" value="cargando..." readonly>
+                <i class="fa-regular fa-circle-check"></i>
+            </div>
         </label>
 
         <button class="form__btn" id="inputBtn">SEND FEEDBACK</button>
@@ -36,7 +45,7 @@
     <!-- Modol -->
     <section class="modal" id="modal">
         <div class="modal__info info">
-            <h2 class="info__title">¿Quieres enviar el  formulario?</h2>
+            <h2 class="info__title">¿Quieres enviar el formulario?</h2>
             <p class="info__paragraph">Antes de enviar el formulario revisa si los datos ingresados son correctos.</p>
             <div class="info__buttons">
                 <button class="info__btn" id="btnAccept">Continuar</button>
@@ -49,7 +58,7 @@
     <div class="dark-mode" id="darkMode">
         <img src="./images/moon.png" alt="moon" class="dark__icon" id="iconDarkMode">
     </div>
-
+    <script src="https://kit.fontawesome.com/8ff5336caf.js" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>
 
